@@ -39,6 +39,7 @@ end
 
 local function createKeyGui()
     local ScreenGui = Instance.new("ScreenGui")
+    ScreenGui.Name = "AriHubKeyGui"
     ScreenGui.ResetOnSpawn = false
     ScreenGui.IgnoreGuiInset = true
     ScreenGui.Parent = player:WaitForChild("PlayerGui")
@@ -126,9 +127,9 @@ local function createKeyGui()
     end)
 end
 
-if hasValidSession() then
-    loadMainScript()
-else
+-- Always show key GUI on execute if session invalid
+if not hasValidSession() then
     createKeyGui()
+else
+    loadMainScript()
 end
-
