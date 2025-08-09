@@ -1,2 +1,0 @@
-# ARI-HUB
-GG SCRIPT 
