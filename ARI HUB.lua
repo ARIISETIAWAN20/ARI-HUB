@@ -1,6 +1,4 @@
--- ARI HUB V3 PRO - COMPRESSED VERSION (Under 500 Lines)
--- By Bebang - All Features Included
-
+-- ARI HUB V3 PRO - COMPRESSED VERSION 
 local Players, LocalPlayer, RunService, UserInputService, Workspace, HttpService = game:GetService("Players"), Players.LocalPlayer or Players.LocalPlayerAdded:Wait(), game:GetService("RunService"), game:GetService("UserInputService"), game:GetService("Workspace"), game:GetService("HttpService")
 local playerGui = LocalPlayer:WaitForChild("PlayerGui", 30) if not playerGui then return end
 
